@@ -18,7 +18,7 @@ $(document).ready(function() {
     $("ul#user").prepend("<li>Imma dog! WOOF!</li>");
     $("ul#webpage").prepend("<li>Stop kidding yourself...</li>");
 
-    $("ul#webpage").children("li").first().click(function() {
+    $("ul#user").children("li").first().click(function() {
       $("#dogimg").show();
     });
 
