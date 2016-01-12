@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#catimg").hide();
+  $("img").hide();
 
   $("button#cat").click(function(){
     $("ul#user").prepend("<li>I'm a kitty! meow!</li>");
@@ -19,7 +19,11 @@ $(document).ready(function() {
     $("ul#webpage").prepend("<li>Stop kidding yourself...</li>");
 
     $("ul#webpage").children("li").first().click(function() {
-      $(this).remove();
+      $("#dogimg").show();
+    });
+
+    $("#dogimg").click(function(){
+      $("#dogimg").hide();
     });
   });
 });
